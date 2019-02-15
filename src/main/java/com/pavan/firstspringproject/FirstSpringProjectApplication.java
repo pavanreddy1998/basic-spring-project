@@ -11,7 +11,7 @@ public class FirstSpringProjectApplication {
 		SpringApplication.run(FirstSpringProjectApplication.class, args);
 
 
-        //BinarySearch bs=new BinarySearch(new QuickSort());
+        
         ApplicationContext ac=SpringApplication.run(FirstSpringProjectApplication.class,args);
         BinarySearch bs= ac.getBean(BinarySearch.class);
         int res=bs.binarysearch(new int[] {5,3,4,8,6,9,1},3);
